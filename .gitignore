@@ -1,5 +1,3 @@
-bin/
-temp/
 *.o
 *.ko
 *.mod.*

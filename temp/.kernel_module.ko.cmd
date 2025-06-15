@@ -1,0 +1,1 @@
+cmd_/home/raspicg/LED_DRIVER/src/kernel_module.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/raspicg/LED_DRIVER/src/kernel_module.ko /home/raspicg/LED_DRIVER/src/kernel_module.o /home/raspicg/LED_DRIVER/src/kernel_module.mod.o;  true
