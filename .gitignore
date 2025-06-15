@@ -1,0 +1,8 @@
+bin/
+temp/
+*.o
+*.ko
+*.mod.*
+*.symvers
+modules.order
+*.swp
