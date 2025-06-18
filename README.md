@@ -122,7 +122,27 @@ LED_DRIVER
 └── user_app -> bin/user_app     # Enlace simbólico para facilitar la ejecución
 ```
 
+## Detalles:
+* El comando `make all` genera:
+  - Archivos intermedios de la carpeta `/temp`.
+  - `bin/kernel_module.ko`.
+  - `bin/user_app`.
+* El comando `make install`:
+  - Descarga el módulo si ya está cargado.
+  - Limpia el log de `dmesg` que muestra los mensajes del kernel.
+  - Carga el nuevo módulo en el kernel.
+  - Obtiene el número mayor registrado por el módulo en `dmesg`.
+  - Crea el dispositivo `/dev/led_gpio` con permisos `rw-rw-rw`.
+* El comando `make link`
+  - Crea un enlace simbólico `./user_app` que apunta a `bin/user_app`, permitiendo ejecutar la app.
 
+
+
+
+
+
+
+  
 
 
 
