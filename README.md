@@ -135,21 +135,18 @@ LED_DRIVER
   - Crea el dispositivo `/dev/led_gpio` con permisos `rw-rw-rw`.
 * El comando `make link`
   - Crea un enlace simbólico `./user_app` que apunta a `bin/user_app`, permitiendo ejecutar la app.
+ 
+## Ejecución
+Se controla y monitorea los estados del LED desde la raíz con los comandos:
 
+```bash
+./user_app on
+```
+```bash
+./user_app off
+```
+```bash
+./user_app status
+```
 
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+En la carpeta `temp` de este repositorio se encuentran las pruebas de funcionamiento.
