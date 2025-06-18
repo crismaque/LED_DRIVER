@@ -47,13 +47,80 @@ Se debería ver un enlace simbólico apuntando al árbol de código fuente o hea
 - Resistencia limitadora
 - GND
 
-## Clonación del repositorio
+## Clonar el repositorio
 
 ```bash
-git clone
+git clone https://github.com/crismaque/LED_DRIVER.git
 cd LED_DRIVER
 ```
+## Compilación e instalación
 
+El repositorio clonado con exito tiene la siguiente estructura:
+
+```bash
+LED_DRIVER
+├── Makefile             # Script principal de compilación 
+├── README.md            # Este archivo
+├── bin                  # Ejecutables compilados
+│  ├── README.md
+├── src                  # Código fuente del programa
+│  ├── Makefile
+│  ├── README.md
+│  ├── kernel_module.c
+│  ├── kernel_module.h
+│  ├── user_app.c
+│  ├── user_app.h
+├── temp                 # Archivos intermedios
+│  ├── README.md
+├── test                 # Evidencias de prueba
+```
+
+La compilación e instalación del proyecto se hace de forma automatizada mediante el **Makefile**
+
+1. Limpiar la compilación anterior:
+```bash
+make clean    
+```
+2. Compilar el módulo del kernel y la aplicación de usuario:
+```bash
+make all  
+```
+3. Instalar el módulo en el kernel y crear el dispositivo `/dev/led_gpio`:
+```bash
+make install  
+```
+4. Crear un enlace simbólico en la raíz del proyecto para facilitar la ejecución de la aplicación:
+```bash
+make link  
+```
+
+Después de esto la estructura del proyecto se verá así:
+```bash
+LED_DRIVER
+├── Makefile             # Script principal de compilación 
+├── README.md            # Este archivo
+├── bin                  # Ejecutables compilados
+│  ├── README.md
+│  ├── kernel_module.ko  # Módulo del kernel
+│  ├── user_app          # Aplicación en espacio de usuario
+├── src                  # Código fuente del programa
+│  ├── Makefile
+│  ├── README.md
+│  ├── kernel_module.c
+│  ├── kernel_module.h
+│  ├── user_app.c
+│  ├── user_app.h
+├── temp                 # Archivos intermedios
+│  ├── README.md
+│  ├── kernel_module.mod
+│  ├── kernel_module.mod.c
+│  ├── kernel_module.mod.o
+│  ├── kernel_module.o
+│  ├── modules.order
+│  ├── Module.symvers
+├── test                 # Evidencias de prueba
+└── user_app -> bin/user_app     # Enlace simbólico para facilitar la ejecución
+```
 
 
 
