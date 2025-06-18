@@ -41,3 +41,28 @@ Para verificar que el directorio existe:
 ls -l /lib/modules/$(uname -r)/build
 ```
 Se debería ver un enlace simbólico apuntando al árbol de código fuente o headers del kernel.
+
+## Montaje del Hardware 
+- LED conectado al pin GPIO 23
+- Resistencia limitadora
+- GND
+
+## Clonación del repositorio
+
+```bash
+git clone
+cd LED_DRIVER
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
