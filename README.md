@@ -149,4 +149,4 @@ Se controla y monitorea los estados del LED desde la raíz con los comandos:
 ./user_app status
 ```
 
-En la carpeta `temp` de este repositorio se encuentran las pruebas de funcionamiento.
+En la carpeta `test` de este repositorio se encuentran las pruebas de funcionamiento.
