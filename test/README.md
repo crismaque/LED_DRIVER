@@ -32,3 +32,23 @@ ls -l /dev/led_gpio
 - `239` es el número mayor asignado por el kernel.
 - `0` es el número menor.
 
+![](https://github.com/crismaque/LED_DRIVER/blob/0482c695a6fc203cf69225742f43459950802751/test/imagen_2025-06-19_094152203.png)
+
+## 3. Control de LED
+Desde la raíz se verificó el funcionamiento del driver y su interacción con la aplicación en espacio de usuario, se realizaron pruebas de control directo del LED mediante comandos enviados al dispositivo `/dev/led_gpio`. 
+
+```bash
+./user_app on
+```
+
+```bash
+./user_app status
+```
+
+```bash
+./user_app off
+```
+
+```bash
+./user_app status
+```
