@@ -4,7 +4,9 @@ Se describe el procedimiento para validar el correcto funcionamiento del driver 
 ## 1. Compilación en instalación
 Se compiló utilizando el Makefile de la raíz, que automatiza la compilación de módulo de kernel, la aplicación en espacio de usuario y la creación del dispositivo `/dev/led_gpio`.
 ```bash
-make all
+make
+make install
+make link
 ```
-[make all](test/imagen_2025-06-19_081311141.png)
+![](https://github.com/crismaque/LED_DRIVER/blob/5f51512b496a90fb9dabbb78b849fa98d72f31d7/test/imagen_2025-06-19_081311141.png)
 
