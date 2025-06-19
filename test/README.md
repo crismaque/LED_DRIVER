@@ -1,4 +1,4 @@
-## Pruebas
+# Pruebas
 Se describe el procedimiento para validar el correcto funcionamiento del driver de dispositivo de carácter para el control de un LED GPIO.
 
 ## 1. Compilación en instalación
