@@ -37,6 +37,9 @@ ls -l /dev/led_gpio
 ## 3. Control de LED
 Desde la raíz se verificó el funcionamiento del driver y su interacción con la aplicación en espacio de usuario, se realizaron pruebas de control directo del LED mediante comandos enviados al dispositivo `/dev/led_gpio`. 
 
+Desde la terminal se cambió el estado del LED usando los comandos para el espacio de usuario.
+
+## Encendido
 ```bash
 ./user_app on
 ```
@@ -44,7 +47,9 @@ Desde la raíz se verificó el funcionamiento del driver y su interacción con l
 ```bash
 ./user_app status
 ```
+![](https://github.com/crismaque/LED_DRIVER/blob/d7b4c7b3b6ef324cf3e48283cc76c130488c840c/test/WhatsApp%20Image%202025-06-19%20at%202.39.34%20PM.jpeg)
 
+## Apagado
 ```bash
 ./user_app off
 ```
@@ -52,3 +57,15 @@ Desde la raíz se verificó el funcionamiento del driver y su interacción con l
 ```bash
 ./user_app status
 ```
+![](https://github.com/crismaque/LED_DRIVER/blob/d7b4c7b3b6ef324cf3e48283cc76c130488c840c/test/WhatsApp%20Image%202025-06-19%20at%202.39.35%20PM.jpeg)
+
+## 4. Desinstalación del módulo y limpieza del proyecto
+Por último se probó la correcta desisntalción del módulo y la limpieza de todos los archivos generados por la compilación.
+```bash
+make uninstall
+```
+
+
+```bash
+`make clean
+``
