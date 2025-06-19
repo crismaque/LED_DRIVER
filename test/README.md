@@ -19,6 +19,12 @@ Con esto se verificó que:
 
 ![](https://github.com/crismaque/LED_DRIVER/blob/129a0259208a56d30aa65d4048f98e4f96250233/test/imagen_2025-06-19_090725506.png)
 
+Se obtuvo la siguiente estructura con los archivos necesarios para el dispositivo:
+```bash
+tree
+```
+![](https://github.com/crismaque/LED_DRIVER/blob/80121233f074ef86a9d765433edb4b2510b4146b/test/imagen_2025-06-19_160817387.png)
+
 ## 2. Verificación del dispositivo
 Luego de instalar el módulo, se verificó que el dispositivo `/dev/led_gpio` fue creado correctamente en el sistema.
 
@@ -74,3 +80,4 @@ Los archivos en `bin/` y `temp/` son eliminados, dejando el proyecto listo para 
 ```bash
 tree
 ```
+![](https://github.com/crismaque/LED_DRIVER/blob/80121233f074ef86a9d765433edb4b2510b4146b/test/imagen_2025-06-19_160851136.png)
