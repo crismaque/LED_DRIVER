@@ -162,7 +162,7 @@ static int __init led_init(void)
 
 	// Mensajes de confirmación
 	printk(KERN_INFO "LED driver cargado existosamente\n");
-	printk(KERN_INFO "Dispositivo creado: /dev/%s (Major: %d)\n", DEV_NAME, major);
+	printk(KERN_INFO "led_gpio: registrado con numero mayor %d\n", major);
 	printk(KERN_INFO "GPIO %d configurado para control de LED\n", LED_GPIO_PIN);
 
 	return 0; // Instalación correcta del LED driver
