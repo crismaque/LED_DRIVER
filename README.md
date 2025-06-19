@@ -140,13 +140,13 @@ LED_DRIVER
 Se controla y monitorea los estados del LED desde la raíz con los comandos:
 
 ```bash
-./user_app on
+./user_app on # Encender el LED
 ```
 ```bash
-./user_app off
+./user_app off # Apagar el LED
 ```
 ```bash
-./user_app status
+./user_app status # Ver el estado del LED
 ```
 
 En la carpeta `test` de este repositorio se encuentran las pruebas de funcionamiento.
