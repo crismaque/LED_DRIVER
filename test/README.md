@@ -6,4 +6,5 @@ Se compiló utilizando el Makefile de la raíz, que automatiza la compilación d
 ```bash
 make all
 ```
+[make all](test/imagen_2025-06-19_081311141.png)
 
