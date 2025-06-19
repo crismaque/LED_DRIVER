@@ -31,7 +31,7 @@ link:
 
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD)/$(SRC_DIR) clean
-	find bin/ -type f \( -name '*.ko'-o -name 'user_app' \) -delete
+	find bin/ -type f \( -name '*.ko' -o -name 'user_app' \) -delete
 	find temp/ -type f ! -name 'README.md' -delete
 	rm -f user_app
 
