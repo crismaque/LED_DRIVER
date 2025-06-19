@@ -66,7 +66,7 @@ Desde la terminal se cambió el estado del LED usando los comandos para el espac
 ![](https://github.com/crismaque/LED_DRIVER/blob/d7b4c7b3b6ef324cf3e48283cc76c130488c840c/test/WhatsApp%20Image%202025-06-19%20at%202.39.35%20PM.jpeg)
 
 ## 4. Desinstalación del módulo y limpieza del proyecto
-Por último se probó la correcta desisntalción del módulo y la limpieza de todos los archivos generados por la compilación.
+Por último, se probó la correcta desisntalción del módulo y la limpieza de todos los archivos generados por la compilación.
 ```bash
 make uninstall
 ```
