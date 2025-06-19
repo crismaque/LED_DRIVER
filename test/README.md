@@ -64,8 +64,13 @@ Por último se probó la correcta desisntalción del módulo y la limpieza de to
 ```bash
 make uninstall
 ```
-
-
+![](https://github.com/crismaque/LED_DRIVER/blob/f73e29a7fcb3b94b89d3d483cce82648307c5113/test/imagen_2025-06-19_145524743.png)
 ```bash
-`make clean
-``
+make clean
+```
+![](https://github.com/crismaque/LED_DRIVER/blob/f73e29a7fcb3b94b89d3d483cce82648307c5113/test/imagen_2025-06-19_145555260.png)
+
+Los archivos en `bin/` y `temp/` son eliminados, dejando el proyecto listo para una recompilación limpia.
+```bash
+tree
+```
